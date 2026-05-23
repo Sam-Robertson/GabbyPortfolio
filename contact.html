@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Gabriela Aguayo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600&family=Caveat:wght@400;600;700&family=Archivo+Black&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-brand">★ GAABY · Portfolio 2025</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="nav-active">Contact</a>
+  </div>
+  <span class="nav-status">● Available now</span>
+  <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- CONTACT PAGE -->
+<section class="contact contact--page">
+  <div class="contact-texture"></div>
+
+  <svg class="star abs star--180" style="top:60px;right:80px;transform:rotate(12deg);--c:#FFD93D"   viewBox="0 0 100 100" aria-hidden="true"><polygon class="star-poly" points="50,2 59,29 88,18 70,41 96,57 68,57 74,87 50,70 26,87 32,57 4,57 30,41 12,18 41,29"/></svg>
+  <svg class="star abs star--90"  style="top:40px;right:280px;transform:rotate(-10deg);--c:#FFD93D" viewBox="0 0 100 100" aria-hidden="true"><polygon class="star-poly" points="50,2 59,29 88,18 70,41 96,57 68,57 74,87 50,70 26,87 32,57 4,57 30,41 12,18 41,29"/></svg>
+  <svg class="star abs star--120" style="bottom:60px;right:100px;transform:rotate(4deg);--c:#FFD93D"  viewBox="0 0 100 100" aria-hidden="true"><polygon class="star-poly" points="50,2 59,29 88,18 70,41 96,57 68,57 74,87 50,70 26,87 32,57 4,57 30,41 12,18 41,29"/></svg>
+
+  <div class="contact-inner">
+
+    <!-- headline -->
+    <div class="ok-so">ok so —</div>
+    <h1 class="contact-heading">let's<br>chat.</h1>
+
+    <!-- two-column layout: form left, details right -->
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <!--
+        Using Formspree for form submission (free plan handles up to 50/month).
+        Replace YOUR_FORM_ID below after signing up at formspree.io
+      -->
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        id="contact-form"
+      >
+        <div class="form-field">
+          <label class="form-label" for="name">Your name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="First &amp; last"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="email">Your email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="hello@yourco.com"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="project-type">What are you working on?</label>
+          <select class="form-input form-select" id="project-type" name="project_type">
+            <option value="" disabled selected>Pick one →</option>
+            <option value="brand">Brand identity</option>
+            <option value="print">Print / posters</option>
+            <option value="social">Social / digital</option>
+            <option value="web">Web design</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="message">Tell me more</label>
+          <textarea
+            class="form-input form-textarea"
+            id="message"
+            name="message"
+            placeholder="What's the project? Timeline? Vibe?"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button class="form-submit" type="submit">
+          <span class="form-submit-text">send it →</span>
+        </button>
+
+        <!-- success / error states (shown via JS) -->
+        <p class="form-success" id="form-success" aria-live="polite" hidden>
+          ★ got it! I'll be in touch soon.
+        </p>
+        <p class="form-error" id="form-error" aria-live="polite" hidden>
+          something went wrong — try emailing me directly.
+        </p>
+      </form>
+
+      <!-- CONTACT DETAILS -->
+      <div class="contact-details">
+        <div class="contact-detail-group">
+          <div class="contact-label">email →</div>
+          <a class="contact-value contact-value--link" href="mailto:hello@gabrielaaguayo.com">
+            hello@gabrielaaguayo.com
+          </a>
+        </div>
+
+        <div class="contact-detail-group">
+          <div class="contact-label">phone →</div>
+          <div class="contact-value">+1 (000) 000–0000</div>
+        </div>
+
+        <div class="contact-detail-group">
+          <div class="contact-label">elsewhere →</div>
+          <a class="contact-social contact-social--link" href="https://instagram.com/gaaby.designs" target="_blank" rel="noopener">Instagram — @gaaby.designs</a>
+          <a class="contact-social contact-social--link" href="https://linkedin.com/in/gabrielaaguayo" target="_blank" rel="noopener">LinkedIn — in/gabrielaaguayo</a>
+          <a class="contact-social contact-social--link" href="https://be.net/gaaby" target="_blank" rel="noopener">Behance — be.net/gaaby</a>
+        </div>
+
+        <div class="contact-hand-note">
+          <span class="caveat-callout" style="position:static;font-size:28px;color:var(--yellow);display:block;transform:rotate(-1deg)">
+            open to junior &amp; mid roles<br>+ freelance projects ★
+          </span>
+        </div>
+      </div>
+
+    </div><!-- /contact-layout -->
+
+    <div class="contact-footer-row">
+      <span>© Gabriela Aguayo · 2025</span>
+      <span>Set in DM Serif Display, DM Sans &amp; Caveat</span>
+      <a href="index.html">↑ back to top</a>
+    </div>
+
+  </div><!-- /contact-inner -->
+</section>
+
+<script src="main.js"></script>
+<script>
+  // Handle Formspree AJAX submission for a smoother experience
+  const form    = document.getElementById('contact-form');
+  const success = document.getElementById('form-success');
+  const error   = document.getElementById('form-error');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('.form-submit');
+    btn.disabled = true;
+    btn.querySelector('.form-submit-text').textContent = 'sending…';
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' },
+      });
+
+      if (res.ok) {
+        form.reset();
+        form.hidden = true;
+        success.hidden = false;
+      } else {
+        throw new Error('bad response');
+      }
+    } catch {
+      error.hidden = false;
+      btn.disabled = false;
+      btn.querySelector('.form-submit-text').textContent = 'send it →';
+    }
+  });
+</script>
+</body>
+</html>
